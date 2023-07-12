@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Icon Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+        body{
+            background: rgb(49, 49, 222);
+
+        }
+        .nav{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            width: 80vw;
+            margin: auto;
+            font-size: 20px;
+        }
+        .nav b{
+            font-size: 25px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        main .main{
+            width: 80vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 700px;
+            color: white;
+        }
+        .main h1{
+            font-size: 60px;
+        }
+        .h1-s{
+            color: rgb(165, 165, 255);
+        }
+        input{
+            padding: 15px;
+            font-size: 20px;
+            border: none;
+            background: white;
+            width: 70%;
+        }
+        .button-a{
+            padding: 15px;
+            font-size: 20px;
+            border: none;
+            background: orange;
+
+        }
+        .input-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 79vw;
+            margin: 0 auto;
+        }
+        .links a{
+            padding: 0px 10px;
+        }
+        .doc{
+            width: 90vw;
+            margin: auto;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .blog{
+            background: white;
+            width: 80vw;
+            margin: auto;
+        }
+        .code{
+            background: black;
+            color: yellow;
+            padding: 20px;
+            overflow: scroll;
+        }
+        .code button{
+            position: absolute;
+            left: 85vw;
+            padding: 3px;
+            border: none;
+            background: white;
+        }
+        @media (max-width:800px) {
+            .nav{
+                width: 99vw;
+            }
+            .links{
+                position: absolute;
+                margin-top: 40px;
+                background-color: black;
+                width: 100%;
+                margin-left: -22px;
+                padding: 10px;
+                overflow: hidden;
+            }
+            .links a{
+                background: black;
+            }
+            .code button{
+                left: 77vw;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/floatingiconanimation/floating-icon-animation-cdn@latest/script1.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <a href=""><b>Floating Icon Animation</b></a>
+            <div class="links">
+                <a href="mailto:ksl@null.net">Email: ksl@null.net</a>
+                <a href="#documentation">Documentation</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="main">
+            <h1><font class="h1-s"><u>Floating Icon</u></font>  Animation</h1><br>
+            <p>Create a Floating Icon Animation and brand yourself on your blog.</p><br>
+            <div class="input-box">
+                <input type="text" value="https://cdn.jsdelivr.net/gh/floatingiconanimation/floating-icon-animation-cdn@latest/script1.js" disabled>
+                <button onclick="navigator.clipboard.writeText(document.querySelector('input').value);alert('Copied to clipboard.')" class="button-a">Copy</button>
+            </div>
+        </section>
+        <section class="doc" id="documentation">
+            <div class="blog">
+                <h1>Documentation</h1><br>
+                <h2>How to use?</h2><br>
+                <p>1. Paste the following code inside head tag.</p> <br>
+                <div class="code" onclick="navigator.clipboard.writeText(this.innerText);alert('Copied to Clipboard')">
+                    <button>Copy</button>
+                    &#x3c;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x20;&#x73;&#x72;&#x63;&#x3d;&#x22;&#x68;&#x74;&#x74;&#x70;&#x73;&#x3a;&#x2f;&#x2f;&#x63;&#x64;&#x6e;&#x2e;&#x6a;&#x73;&#x64;&#x65;&#x6c;&#x69;&#x76;&#x72;&#x2e;&#x6e;&#x65;&#x74;&#x2f;&#x67;&#x68;&#x2f;&#x66;&#x6c;&#x6f;&#x61;&#x74;&#x69;&#x6e;&#x67;&#x69;&#x63;&#x6f;&#x6e;&#x61;&#x6e;&#x69;&#x6d;&#x61;&#x74;&#x69;&#x6f;&#x6e;&#x2f;&#x66;&#x6c;&#x6f;&#x61;&#x74;&#x69;&#x6e;&#x67;&#x2d;&#x69;&#x63;&#x6f;&#x6e;&#x2d;&#x61;&#x6e;&#x69;&#x6d;&#x61;&#x74;&#x69;&#x6f;&#x6e;&#x2d;&#x63;&#x64;&#x6e;&#x40;&#x6d;&#x61;&#x73;&#x74;&#x65;&#x72;&#x2f;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x2e;&#x6a;&#x73;&#x22;&#x3e;&#x3c;&#x2f;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3e;
+                </div>
+                <br>
+                <p>2. Add the following code just before the end of body tag.</p> <br>
+                <div class="code" onclick="navigator.clipboard.writeText(this.innerText);alert('Copied to Clipboard')">
+                    <button>Copy</button>
+                    &#x3c;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3e;&#xa;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x66;&#x6c;&#x6f;&#x61;&#x74;&#x69;&#x6e;&#x67;&#x5f;&#x69;&#x63;&#x6f;&#x6e;&#x28;&#x22;&#x62;&#x61;&#x63;&#x6b;&#x67;&#x72;&#x6f;&#x75;&#x6e;&#x64;&#x5f;&#x63;&#x6f;&#x6c;&#x6f;&#x72;&#x22;&#x2c;&#x22;&#x69;&#x6d;&#x61;&#x67;&#x65;&#x2e;&#x70;&#x6e;&#x67;&#x22;&#x2c;&#x22;&#x73;&#x69;&#x7a;&#x65;&#x22;&#x2c;&#x22;&#x6f;&#x70;&#x61;&#x63;&#x69;&#x74;&#x79;&#x22;&#x29;&#xa;&#x20;&#x20;&#x20;&#x20;&#x3c;&#x2f;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3e;
+                </div>
+                <br>
+                <h2>How it works?</h2><br>
+                <p>
+                    <ul>
+                        <li><b>background_color</b> - You can set background color of your logo here. Write <b>none</b> if you want no background color.</li><br>
+                        <li><b>image.png</b> - You can add your icon/logo/image here. Write <b>none</b> if you want no image.</li><br>
+                        <li><b>size</b> - You can add the logo size here. Write 50 in it if you don't know what to write.</li><br>
+                        <li><b>opacity</b> - You can add  logo's opacity here. Write 50 if you don't know what to write.</li><br>
+                    </ul>
+                </p>
+                <br>
+                <h2>Example</h2><br>
+                <p>Just create a file <b>index.html</b> and paste the following code inside that file.</p><br>
+                <div class="code" onclick="navigator.clipboard.writeText(this.innerText);alert('Copied to Clipboard')">
+                    <button>Copy</button>
+                    <pre>
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        floating_icon("","https://img.icons8.com/bubbles/50/download.png","100","50")
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <br><br>
+    <script> floating_icon("none","image.png","140","80") </script>
+</body>
+</html>
